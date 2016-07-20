@@ -1,0 +1,173 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+}
+.div1{
+	display: block;
+	height: 40px;
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 2px 8px;
+	text-align: center;
+	border: 2px solid;
+	border-radius: 20px;
+	border-color: #881280;
+}
+.div1 p{
+	display: block;
+	position: relative;
+	font-size: 18px;
+	top: 50%;
+	margin-top: -9px;
+}
+#div2{
+	background-color: #8BB5C0;
+	box-shadow: 10px 10px 10px #888888;
+}
+#div3{
+	background:url(../img/web.jpg) no-repeat;
+	/*background-size: 50% 100%;*/
+	background-size: contain;
+	background-position: top;
+}
+#div4{
+	text-shadow: 5px 5px 5px blue;
+}
+#div5{
+	   transform: 		translate(-10px,5px);
+	  -o-transform: 	translate(-10px,5px); /* Opera */
+	  -ms-transform: 	translate(-10px,5px); /* IE 9 */
+	 -moz-transform: 	translate(-10px,5px); /* Firefox */
+	-webkit-transform: 	translate(-10px,5px); /* Safari and Chrome */
+}
+#div6{
+		transform: 		rotate(15deg);
+	  -o-transform: 	rotate(15deg); /* Opera */
+	  -ms-transform: 	rotate(15deg); /* IE 9 */
+	 -moz-transform: 	rotate(15deg); /* Firefox */
+	-webkit-transform: 	rotate(15deg); /* Safari and Chrome */
+}
+#div7:hover{
+		transform: 		scale(1.5,1.2);
+	  -o-transform: 	scale(1.5,1.2); /* Opera */
+	  -ms-transform: 	scale(1.5,1.2); /* IE 9 */
+	 -moz-transform: 	scale(1.5,1.2); /* Firefox */
+	-webkit-transform: 	scale(1.5,1.2); /* Safari and Chrome */
+}
+#div8{
+		transform: 		rotateX(200deg);
+	  -o-transition: 	rotateX(360deg); 	/* Opera */
+	 -moz-transform: 	rotateX(200deg);	/* Firefox */
+	-webkit-transform: 	rotateX(200deg);	/* Safari 和 Chrome */
+}
+#div9{
+		transition: 	width 2s, height 2s;
+	 -o-transition: 	width 2s, height 2s, -o-transform 2s; 		/* Opera */
+	 -moz-transition: 	width 2s, height 2s, -moz-transform 2s;  	/* Firefox 4 */
+	-webkit-transition: width 2s, height 2s, -webkit-transform 2s; 	/* Safari and Chrome */
+}
+#div9:hover{
+	width: 300px;
+	height: 80px;
+		transform: 		rotate(360deg);
+	  -o-transition: 	rotate(360deg); /* Opera */
+	 -moz-transform: 	rotate(360deg);	/* Firefox */
+	-webkit-transform: 	rotate(360deg);	/* Safari 和 Chrome */
+}
+/*需要先定义一个动画*/
+@keyframes changeME
+{
+	0%   {background: red;}
+	25%  {background: yellow;}
+	50%  {background: blue;}
+	100% {background: green;}
+}
+
+@-moz-keyframes changeME /* Firefox */
+{
+	0%   {background: red;}
+	25%  {background: yellow;}
+	50%  {background: blue;}
+	100% {background: green;}
+}
+
+@-webkit-keyframes changeME /* Safari 和 Chrome */
+{
+	0%   {background: red;}
+	25%  {background: yellow;}
+	50%  {background: blue;}
+	100% {background: green;}
+}
+
+@-o-keyframes changeME /* Opera */
+{
+	0%   {background: red;}
+	25%  {background: yellow;}
+	50%  {background: blue;}
+	100% {background: green;}
+}
+#div10{
+		animation: 		changeME 5s;
+	  -o-animation: 	changeME 5s;	/* Opera */
+	 -moz-animation: 	changeME 5s;	/* Firefox */
+	-webkit-animation: 	changeME 5s;	/* Safari 和 Chrome */
+
+		animation-iteration-count: 		infinite;
+	  -o-animation-iteration-count: 	infinite;	/* Opera */
+	 -moz-animation-iteration-count: 	infinite;	/* Firefox */	
+	 -webkit-animation-iteration-count: infinite; 	/* Safari 和 Chrome */
+}
+
+@keyframes changeMeAgain
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:blue; left:200px; top:200px;}
+	75%  {background:green; left:0px; top:200px;}
+	100% {background:red; left:0px; top:0px;}
+}
+
+@-moz-keyframes changeMeAgain /* Firefox */
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:blue; left:200px; top:200px;}
+	75%  {background:green; left:0px; top:200px;}
+	100% {background:red; left:0px; top:0px;}
+}
+
+@-webkit-keyframes changeMeAgain /* Safari and Chrome */
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:blue; left:200px; top:200px;}
+	75%  {background:green; left:0px; top:200px;}
+	100% {background:red; left:0px; top:0px;}
+}
+
+@-o-keyframes changeMeAgain /* Opera */
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:blue; left:200px; top:200px;}
+	75%  {background:green; left:0px; top:200px;}
+	100% {background:red; left:0px; top:0px;}
+}
+
+#div11{
+	position:relative;
+	background:red;
+		animation: 		changeMeAgain 5s;
+	  -o-animation: 	changeMeAgain 5s; /* Opera */
+	 -moz-animation: 	changeMeAgain 5s; /* Firefox */
+	-webkit-animation: 	changeMeAgain 5s; /* Safari and Chrome */
+}
+#div12{
+	outline: 2px solid #8BB5C0;
+	/*规定边框边缘之外 15 像素处的轮廓：*/
+	outline-offset: 15px;
+}
